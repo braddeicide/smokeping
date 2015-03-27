@@ -180,6 +180,6 @@ elif [[ $# -ge 1 ]]; then
     echo "ERROR: command not found: $1"
     exit 13
 else
-    service smokeping start
+    /usr/sbin/smokeping
     exec lighttpd -D -f /etc/lighttpd/lighttpd.conf
 fi
